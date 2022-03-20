@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+import Header from './Home/Header';
+import Footer from './Home/Footer';
+
+import Feed from './Home/facebook';
+import Accueil from './Home/Accueil'
+import CountDown from './Home/countdown';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <div>
+      <Header />
+      {/* <CountDown /> */}
+      </div>
+      <div className="App container">
+
+      <div className='row'>
+        <div className='col-8'>
+      <Accueil />
+      </div>
+      <div className='col feed'>
+      <Feed />
+      </div>
+      </div>
+
+      </div>
+      <Footer />
+
+      </div>
   );
 }
 
