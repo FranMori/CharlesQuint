@@ -1,7 +1,7 @@
-import Header from "../Home/Header"
-import Footer from "../Home/Footer"
+import Header from "../../Home/Header"
+import Footer from "../../Home/Footer"
 
-import aigle1 from "../assets/autres/aigle1.jpg"
+import aigle1 from "../../assets/autres/aigle1.jpg"
 
 function Aigle () {
   return(

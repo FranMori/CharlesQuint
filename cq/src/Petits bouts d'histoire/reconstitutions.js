@@ -7,7 +7,7 @@ function Reconstitutions () {
       <Header />
       <div>
         <h2 className="titre bloc">
-          Les diverses reconstitutions
+          Histoire d'une reconstitution
         </h2>
         <div className="bloc">
           <p>La légende raconte que trois auvergnats en goguette auraient arrêté et molesté Charles-Quint se promenant seul dans la campagne beaumontoise.</p>

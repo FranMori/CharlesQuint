@@ -1,5 +1,5 @@
-import Header from "../Home/Header"
-import Footer from "../Home/Footer"
+import Header from "../../Home/Header"
+import Footer from "../../Home/Footer"
 
 function Pot() {
   return (

@@ -14,9 +14,9 @@
 }
 
 .comite__carte {
-  background-color: #faa307;
+  color: white;
+  background-color: #6a040f;
   border-radius: 10%;
-  border: 1px solid #faa307;
   margin: 1rem;
   padding: 1rem;
 }

@@ -8,18 +8,9 @@ function NavHistoire () {
     <div>
       <Header />
       <div className="bloc navBloc">
-        <div className="row">
-      <a href="/histoire/heretiques"><Button className='p-3' variant='warning'>Charles-Quint et les hérétiques</Button></a> 
-      <a href="/histoire/legende_realite">   <Button className='p-3' variant='warning'>Charles-quint à Beaumont, légende ou réalité ?</Button></a> 
-      <a href="/histoire/lettre_Charles"> <Button className='p-3' variant='warning'>Lettre à Charles de Croÿ</Button></a> 
-      </div>
-      <div className="row">
-      <a href="/histoire/lettre_Marie"> <Button className='p-3' variant='warning'>Lettre à Marie de Hongrie</Button></a> 
-      <a href="/histoire/pendaison"> <Button className='p-3' variant='warning'>La pendaison</Button></a> 
-      <a href="/histoire/pot_Walcourt"> <Button className='p-3' variant='warning'>Le pot de Charles-Quint à Walcourt</Button></a> 
-      <a href="/histoire/reconstitutions">  <Button className='p-3' variant='warning'>Les diverses reconstitutions</Button></a> 
-      </div>
-
+      <a href="/histoire/anecdotes"> <Button className='p-3' variant='warning'>Anecdotes</Button></a> 
+      <a href="/histoire/autres"> <Button className='p-3' variant='warning'>Autres légends de Charles-Quint</Button></a> 
+      <a href="/histoire/reconstitutions">  <Button className='p-3' variant='warning'>Histoire d'une reconstitution</Button></a> 
       </div>
       <div className="bottom0">
       <Footer />

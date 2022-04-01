@@ -14,7 +14,7 @@ function Militaire () {
     <div>
       <Header />
       <div>
-        <h2 className="bloc titre">L'organisation militaire à Beaumont</h2>
+        <h2 className="bloc titre">Les Confréries militaires</h2>
         <p className="auteur"> D'après Théodore Bernier</p>
       <div className="bloc">
         <p>Dans le cortège, vous pourrez apercevoir différents groupes armés qui représentent les anciennes confréries présentes à Beaumont lors de la visite de Charles-Quint en 1549.  Ces confréries existent encore aujourd'hui et leur histoire est déjà fort ancienne.</p>

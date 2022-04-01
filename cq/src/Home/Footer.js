@@ -7,7 +7,6 @@ function Footer() {
       <ul>
         <h5>Contact : </h5>
           <li>info@legende-beaumont.be</li>
-          <li>webmaster@legende-beaumont.be</li>
       </ul>
       <div>
       {/* <FontAwesomeIcon icon="facebook" /> */}

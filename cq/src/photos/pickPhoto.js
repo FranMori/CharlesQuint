@@ -1,34 +1,70 @@
 import { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Header from '../Home/Header'
-import Footer from '../Home/Footer'
+import {faAngleLeft} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 
 import PhotoItems from './objet'
 
 
 
 class PickPhoto extends Component {
-  componentDidMount() {
-const url = window.location.pathname
-const justId = parseInt((url.split(':')[1]))
-
-function specificId(photo) {
-  return photo.id === (justId)
-}
-let justUrl = (PhotoItems.find(specificId).url)
-console.log(justUrl)
+  constructor() {
+    super()
+    this.state = { justUrl: "" };
+    this.state = { nextUrl: "" };
+    this.state = { previousUrl: "" };
+    this.state = { date: "" };
+    
   }
-  render() {
+  componentDidMount() {
+    const url = window.location.pathname
+    const justId = parseInt((url.split(':')[1]))
+    const idPreviousPhoto = (justId -1)
+    const idNextPhoto = (justId +1)
+    const nextUrl = url.replace((url.split(':')[1]), idNextPhoto)
+    this.setState({nextUrl})
+    const previousUrl = url.replace((url.split(':')[1]), idPreviousPhoto)
+    this.setState({previousUrl})  
 
+
+
+    function specificId(photo) {
+      return photo.id === justId
+    }
+  
+
+    let justUrl = (PhotoItems.find(specificId).url)
+    let date = (PhotoItems.find(specificId).date)
+    console.log(date)
+    this.setState({date})
+    this.setState({justUrl})
+
+  }  
+  
+  
+  render() {
     return (
-      <div>
-      <Header />
-      <div>
-      <h1>{this.justId}</h1>
-        <img className="bigPhoto" alt="Charles-Quint" src={this.justUrl}></img>
+  <div>
+      <a href='/galerie'>
+      <div className='pickPhoto'>
+        <h1>Photos de {this.state.date}</h1>
+        <div className='arrowLeft'>
+        <a href={this.state.previousUrl}>
+      <FontAwesomeIcon size='6x' color='white' icon={faAngleLeft} />
+        </a>
       </div>
-      <Footer />
+        <div className='arrowRight'>
+          <a href={this.state.nextUrl}>
+        <FontAwesomeIcon size='6x' color='white'  icon={faAngleRight} />
+          </a>
+        </div>
+      </div>
+    </a>
+    <div className='absolutePhoto'>
+        <img className="bigPhoto" alt="Charles-Quint" src={`/${this.state.justUrl}`}></img>
     </div>
+  </div>  
 
     )
   }
